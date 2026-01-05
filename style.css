@@ -87,8 +87,9 @@ button {
   color: var(--grey-950);
 }
 
-.num:active {
+.active {
   background-color: var(--white);
+  color: var(--grey-950);
 }
 
 .submit-el {
