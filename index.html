@@ -1,43 +1,61 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | Interactive rating component</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Rating State -->
+      <form class="rating-state">
+        <img
+          src="./images/icon-star.svg"
+          alt="Star Icon"
+          class="star-icon mb-1"
+        />
+        <h1 class="title mb-1">How did we do?</h1>
+        <p class="message">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
 
-</head>
-<body>
+        <div class="numbers mb-1-y">
+          <button type="button" class="num">1</button>
+          <button type="button" class="num">2</button>
+          <button type="button" class="num">3</button>
+          <button type="button" class="num">4</button>
+          <button type="button" class="num">5</button>
+        </div>
 
-  <div class="container">
-    <div class="rating-card">
-      <img src="./images/icon-star.svg" alt="Star Icon" class="star-icon">
-      <h1 class="title">How did we do?</h1>
-      <p class="message">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
-      <div class="numbers">
-        <div class="num">1</div>
-        <div class="num">2</div>
-        <div class="num">3</div>
-        <div class="num">4</div>
-        <div class="num">5</div>
-        <div class="num">6</div>
+        <button type="submit" class="submit-el">SUBMIT</button>
+      </form>
+
+      <!-- Thanks State -->
+      <div class="thanks-state hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+          class="thanks-img mb-1"
+        />
+        <p class="selected-msg mb-1" aria-live="polite">
+          You selected 4 out of 5
+        </p>
+        <h1 class="thanks-title mb-1">Thank you!</h1>
+        <p class="message mb-1">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don't hesitate to get in touch!
+        </p>
       </div>
-      <button class="submit-el">SUBMIT</button>
-    </div>  
-  </div>
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
-</body>
+    </div>
+  </body>
 </html>

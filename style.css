@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --primary-color: hsl(25, 97%, 53%);
+  --white: hsl(0, 100%, 100%);
+  --grey-500: hsl(217, 12%, 63%);
+  --grey-900: hsl(213, 19%, 18%);
+  --grey-950: hsl(216, 12%, 8%);
+  --overpass: 'Overpass', sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--overpass);
+  background-color: hsl(216, 12%, 6%);
+  color: var(--white);
+  line-height: 1.5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-1-y {
+  margin: 1.5rem 0;
+}
+
+p {
+  font-size: 15px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 375px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--grey-900),
+    var(--grey-950)
+  );
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+.star-icon {
+  border-radius: 100%;
+  padding: 1rem;
+  background-color: var(--grey-950);
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.message {
+  color: var(--grey-500);
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.num {
+  border-radius: 50%;
+  border: none;
+  padding: 1rem 1.2rem;
+  background-color: var(--grey-900);
+  color: var(--grey-500);
+  font-weight: 900;
+}
+
+.num:hover {
+  background-color: var(--primary-color);
+  color: var(--grey-950);
+}
+
+.num:active {
+  background-color: var(--white);
+}
+
+.submit-el {
+  background: var(--primary-color);
+  color: var(--grey-900);
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.125rem;
+  letter-spacing: 3px;
+}
+
+.submit-el:hover {
+  background: var(--white);
+}
+
+.thanks-state {
+  text-align: center;
+}
+
+.selected-msg {
+  color: var(--primary-color);
+  background: var(--grey-900);
+  display: inline-block;
+  border-radius: 30px;
+  padding: 0.6rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
